@@ -35,7 +35,9 @@ body {
     color: rgb(0, 0, 0);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+.nav ul li a:hover{
+    color: rgb(179, 86, 0);
+}
 footer {
     grid-area: footer;
     display: flex;
@@ -57,6 +59,9 @@ footer {
 }
 .ul_footer li a {
     color: rgb(0, 0, 0);
+}
+.ul_footer li a:hover{
+    color: rgb(179, 86, 0);
 }
 .h2_imagenes {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
