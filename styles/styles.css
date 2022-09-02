@@ -1,0 +1,155 @@
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 150, 64);
+  border-bottom: 4px solid #000000;
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  height: 70px;
+}
+.header nav {
+  grid-area: nav;
+  top: -65px;
+  left: 400px;
+}
+.header ul {
+  display: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header li {
+  padding: 20px;
+}
+.header a {
+  font-size: x-large;
+  color: rgb(0, 0, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.header a:hover {
+  color: rgb(179, 86, 0);
+}
+
+body {
+  background-color: rgb(255, 180, 109);
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "footer footer footer";
+  grid-template-rows: 100px 1fr 75px;
+  height: 100vh;
+}
+
+main h1 {
+  position: relative;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  left: 50px;
+}
+
+main p {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 30px;
+}
+
+main ul {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: x-large;
+}
+
+main h2 {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  left: 30px;
+}
+
+main h3 {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  left: 40px;
+  bottom: -10px;
+}
+
+.imagen {
+  position: relative;
+  top: 90px;
+  left: -100px;
+  padding: 10px;
+  width: 200px;
+  height: 250px;
+}
+
+.h2_imagenes {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: -20px;
+  left: 250px;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  background-color: rgb(255, 150, 64);
+  border-top: 4px solid #000000;
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+}
+footer .ul_footer {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+footer li {
+  padding: 10px;
+}
+footer a {
+  color: rgb(0, 0, 0);
+}
+footer a:hover {
+  color: rgb(179, 86, 0);
+}
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-areas: "header header header" "nav nav nav" "footer footer footer";
+    grid-template-rows: 100px 1fr 75px;
+    height: 100vh;
+  }
+  .nav ul {
+    display: flex;
+  }
+  .imagen {
+    position: relative;
+    left: -400px;
+    padding: 50px;
+    width: 320px;
+    height: 300px;
+  }
+  .h2_imagenes {
+    left: 350px;
+    top: 10px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav ul {
+    display: flex;
+  }
+  .imagen {
+    position: relative;
+    left: -130px;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
