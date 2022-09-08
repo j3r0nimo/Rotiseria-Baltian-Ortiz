@@ -17,9 +17,9 @@ footer {
         padding: 10px;
     }
     a {
-        color: rgb(0, 0, 0);
+        color: map-get($color, colorFont );
     }
     & a:hover{
-        color: rgb(179, 86, 0);
+        color: map-get($color, colorHover );
     }
 }
