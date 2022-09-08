@@ -1,4 +1,4 @@
-@import "./partials/header.scss", "./partials/main.scss", "./partials/footer.scss";
+@import "./partials/maps", "./partials/extend", "./partials/header.scss", "./partials/main.scss", "./partials/footer.scss";
 @media screen and (min-width:1200px) {
     .grid{
         display: grid;

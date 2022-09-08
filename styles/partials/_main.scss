@@ -1,5 +1,5 @@
 body {  
-    background-color: rgb(255, 180, 109);
+    background-color: map-get($color, colorMain );
     margin: 0;
     padding: 0;
 }
@@ -18,26 +18,17 @@ main h1{
     left: 50px;
 }
 main p{
-    position:relative;
-    font-family:Arial, Helvetica, sans-serif;
-    left: 30px;
+    @include main(30px, 0px, Medium );
 }
 main ul{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: x-large;
 }
 main h2{
-    position: relative;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    left: 30px;
+    @include main(30px, 0px, xx-large );
 }
 main h3{
-    position: relative;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: larger;
-    left: 40px;
-    bottom: -10px;
+    @include main(40px, -10px, larger);
 }
 .imagen {
     position: relative;

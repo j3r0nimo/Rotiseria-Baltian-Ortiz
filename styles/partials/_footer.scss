@@ -1,7 +1,7 @@
 footer {
     grid-area: footer;
     display: flex;
-    background-color: rgb(255, 150, 64);
+    background-color: map-get($color, colorHeadFoot);
     border-top: 4px solid #000000;
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

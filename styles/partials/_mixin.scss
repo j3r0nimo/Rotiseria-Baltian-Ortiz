@@ -1,0 +1,6 @@
+@mixin main($left, $bottom, $fontsize) {
+    @extend %mainPositionFont;
+    left: $left;
+    bottom: $bottom;
+    font-size: $fontsize;
+}
